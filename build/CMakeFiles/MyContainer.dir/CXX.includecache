@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kacper/Pulpit/MyContainer/MyContainer.cpp
+MyContainer.hpp
+/home/kacper/Pulpit/MyContainer/MyContainer.hpp
+
+/home/kacper/Pulpit/MyContainer/MyContainer.hpp
+iostream
+-
+exception
+-
+

@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 /home/kacper/Pulpit/MyContainer/MyContainer.hpp
+iostream
+-
+exception
+-
 
 /home/kacper/Pulpit/MyContainer/main.cpp
 MyContainer.hpp

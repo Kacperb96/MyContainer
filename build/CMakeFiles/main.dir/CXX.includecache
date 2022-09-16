@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
+/home/kacper/Pulpit/MyContainer/MyContainer.hpp
+
 /home/kacper/Pulpit/MyContainer/main.cpp
-iostream
--
+MyContainer.hpp
+/home/kacper/Pulpit/MyContainer/MyContainer.hpp
 

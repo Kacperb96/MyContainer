@@ -1,0 +1,3 @@
+/home/kacper/Pulpit/MyContainer/build/CMakeFiles/rebuild_cache.dir
+/home/kacper/Pulpit/MyContainer/build/CMakeFiles/edit_cache.dir
+/home/kacper/Pulpit/MyContainer/build/CMakeFiles/main.dir

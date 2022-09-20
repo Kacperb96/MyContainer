@@ -1,5 +1,6 @@
 #include <iostream>
 #include <exception>
+#include <initializer_list>
 
 class MyContainer{
 public:
@@ -24,6 +25,17 @@ public:
             container_number++;
             other.numbers = nullptr;
         }
+
+    MyContainer(std::initializer_list<int> data){
+        container_number++;
+        size = data.size();
+        numbers = new int[size];
+        int i {0};
+        for(auto j : data) {
+            numbers[i++] = j;
+            count++;
+        }
+    }
 
     ~MyContainer(){
         delete [] numbers;
@@ -62,7 +74,7 @@ public:
                 }
             }
             else{
-                std::cout << "Container is empty\n";
+                std::cout << "Container nr: " << container_number << " is empty\n";
             }
     }
 

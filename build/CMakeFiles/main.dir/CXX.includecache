@@ -11,6 +11,8 @@ iostream
 -
 exception
 -
+initializer_list
+-
 
 /home/kacper/Pulpit/MyContainer/main.cpp
 MyContainer.hpp

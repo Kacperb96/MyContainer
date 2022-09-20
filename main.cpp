@@ -12,5 +12,9 @@ int main(){
     MyContainer m2 = std::move(m1);
     m2.print_content();
 
+    std::cout << "\n";
+    MyContainer m3 {2, 9, 10, 24};
+    m3.print_content();
+
     return 0;
 }

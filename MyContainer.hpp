@@ -2,11 +2,12 @@
 #include <exception>
 #include <initializer_list>
 
+template <typename T>
 class MyContainer{
 public:
     MyContainer(std::size_t size)
         : size(size),
-        numbers(new int[size]), 
+        numbers(new T[size]), 
         count(0){
             container_number++;
         }
@@ -26,10 +27,10 @@ public:
             other.numbers = nullptr;
         }
 
-    MyContainer(std::initializer_list<int> data){
+    MyContainer(std::initializer_list<T> data){
         container_number++;
         size = data.size();
-        numbers = new int[size];
+        numbers = new T[size];
         int i {0};
         for(auto j : data) {
             numbers[i++] = j;
@@ -56,7 +57,7 @@ public:
         numbers = nullptr;
     }
 
-    void add(int n){
+    void add(T n){
         if(count >= size){
             throw std::invalid_argument("Invalid argument\n");
         }
@@ -79,10 +80,11 @@ public:
     }
 
 private:
-    int* numbers;
+    T* numbers;
     int count{};
     std::size_t size;
     static int container_number;
 };
 
-int MyContainer::container_number = 0;
+template <typename T>
+int MyContainer<T>::container_number = 0;

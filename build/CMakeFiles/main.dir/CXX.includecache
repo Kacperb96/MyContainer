@@ -6,15 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/kacper/Pulpit/MyContainer/MyContainer.hpp
-iostream
--
-exception
--
-initializer_list
--
-
-/home/kacper/Pulpit/MyContainer/main.cpp
-MyContainer.hpp
-/home/kacper/Pulpit/MyContainer/MyContainer.hpp
-

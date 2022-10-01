@@ -123,6 +123,46 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+#=============================================================================
+# Target rules for targets named MyContainers
+
+# Build rule for target.
+MyContainers: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MyContainers
+.PHONY : MyContainers
+
+# fast build rule for target.
+MyContainers/fast:
+	$(MAKE) -f CMakeFiles/MyContainers.dir/build.make CMakeFiles/MyContainers.dir/build
+.PHONY : MyContainers/fast
+
+MyContainer.o: MyContainer.cpp.o
+
+.PHONY : MyContainer.o
+
+# target to build an object file
+MyContainer.cpp.o:
+	$(MAKE) -f CMakeFiles/MyContainers.dir/build.make CMakeFiles/MyContainers.dir/MyContainer.cpp.o
+.PHONY : MyContainer.cpp.o
+
+MyContainer.i: MyContainer.cpp.i
+
+.PHONY : MyContainer.i
+
+# target to preprocess a source file
+MyContainer.cpp.i:
+	$(MAKE) -f CMakeFiles/MyContainers.dir/build.make CMakeFiles/MyContainers.dir/MyContainer.cpp.i
+.PHONY : MyContainer.cpp.i
+
+MyContainer.s: MyContainer.cpp.s
+
+.PHONY : MyContainer.s
+
+# target to generate assembly for a file
+MyContainer.cpp.s:
+	$(MAKE) -f CMakeFiles/MyContainers.dir/build.make CMakeFiles/MyContainers.dir/MyContainer.cpp.s
+.PHONY : MyContainer.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +199,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
+	@echo "... MyContainers"
+	@echo "... MyContainer.o"
+	@echo "... MyContainer.i"
+	@echo "... MyContainer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
